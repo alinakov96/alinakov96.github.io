@@ -110,6 +110,18 @@ main {
     border-radius: 5px;
     box-shadow: 2px 2px 5px darkgray;
   }
+
+  #reload-btn {
+    padding: 1rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    background: none;
+    color: black;
+    border: solid 2px white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+    margin-left: 8rem;
+  }
 }
 
 #fortune {

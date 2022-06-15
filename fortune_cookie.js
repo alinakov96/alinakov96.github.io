@@ -54,3 +54,7 @@ document.getElementById("submit-btn").addEventListener("click", function () {
         "What the heck is this shaite?";
   }
 });
+
+document.getElementById("reload-btn").addEventListener("click", function () {
+  location.reload();
+});
