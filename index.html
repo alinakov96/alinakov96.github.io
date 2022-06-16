@@ -16,11 +16,24 @@
         <h2>The Mighty Fortune Cookie</h2>
       </div>
       <div class="fortune-cookie">
+        <p>
+          Enter your name and question below. Press "Reveal Fortune!" to see the
+          answer. Press "Reset" to reset the page.
+        </p>
         <div class="input">
-          <h3>Enter your name -></h3>
-          <input type="text" name="name" id="name" />
-          <h3>Enter your question -></h3>
-          <input type="text" name="question" id="question" />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name here..."
+          />
+
+          <input
+            type="text"
+            name="question"
+            id="question"
+            placeholder="Enter your question here..."
+          />
         </div>
         <div class="button">
           <button id="submit-btn" type="submit">Reveal Fortune!</button>
@@ -35,12 +48,13 @@
           </div>
           <div id="ans-question"></div>
         </div>
+        <p>Your fortune:</p>
         <div id="fortune"></div>
       </div>
     </main>
 
     <footer>
-      <p class="copyright">Copyright: Alex Koff. All rigths reserved.</p>
+      <p class="copyright">Copyright: Alex Koff, 2022. All rigths reserved.</p>
     </footer>
 
     <script src="fortune_cookie.js"></script>
