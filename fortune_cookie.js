@@ -22,7 +22,7 @@ document.getElementById("submit-btn").addEventListener("click", function () {
 
   user_question.value = "";
 
-  let randomNumber = Math.floor(Math.random() * 8);
+  let randomNumber = Math.floor(Math.random() * 20);
   let fortuneCookie = "";
   switch (randomNumber) {
     case 0:
@@ -48,6 +48,42 @@ document.getElementById("submit-btn").addEventListener("click", function () {
       break;
     case 7:
       document.getElementById("fortune").innerHTML = "Signs point to yes";
+      break;
+    case 8:
+      document.getElementById("fortune").innerHTML = "Look in the mirror";
+      break;
+    case 9:
+      document.getElementById("fortune").innerHTML = "You tell me?";
+      break;
+    case 10:
+      document.getElementById("fortune").innerHTML = "A what now??!!";
+      break;
+    case 11:
+      document.getElementById("fortune").innerHTML = "Absolutely not";
+      break;
+    case 12:
+      document.getElementById("fortune").innerHTML = "Heck yeah";
+      break;
+    case 13:
+      document.getElementById("fortune").innerHTML = "That's a noooaaarrrr";
+      break;
+    case 14:
+      document.getElementById("fortune").innerHTML = "Yaaaassssss";
+      break;
+    case 15:
+      document.getElementById("fortune").innerHTML = "Thumbs up!";
+      break;
+    case 16:
+      document.getElementById("fortune").innerHTML = "I'm gonna say yup";
+      break;
+    case 17:
+      document.getElementById("fortune").innerHTML = "Seems like it";
+      break;
+    case 18:
+      document.getElementById("fortune").innerHTML = "Absolutely";
+      break;
+    case 19:
+      document.getElementById("fortune").innerHTML = "Affirmative";
       break;
     default:
       document.getElementById("fortune").innerHTML =
