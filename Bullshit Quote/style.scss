@@ -5,9 +5,24 @@ body {
 
   header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 1rem yellowgreen groove;
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+
+      a {
+        padding: 0.5rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+      }
+    }
 
     h1 {
       font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",

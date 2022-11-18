@@ -7,8 +7,23 @@ body {
 header {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+    a {
+      padding: 0.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: black;
+    }
+  }
 }
 
 main {
