@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eurovision 2023 Countdown</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <div class="section">
+      <img src="crowd.jpg" alt="crowd in concert" />
+      <h1 id="countdown">2:1:3</h1>
+      <!-- <p>
+        The Eurovision Song Contest 2023 is the upcoming 67th edition of the
+        Eurovision Song Contest.<br />
+        It is set to take place in Liverpool, United Kingdom, after Ukraine,
+        winner of the 2022 contest with <br />
+        the song "Stefania" by Kalush Orchestra,
+        <br />
+        was unable to meet the demands of hosting the event due to security
+        concerns caused by the Russian invasion of Ukraine. <br />
+        Organised by the European Broadcasting Union (EBU) and host broadcaster
+        the British Broadcasting Corporation (BBC) <br />
+        on behalf of the Public Broadcasting Company of Ukraine (UA:PBC), <br />
+        the contest will be held at the Liverpool Arena, and will consist of two
+        semi-finals on 9 and 11 May, and a final on 13 May 2023. <br />
+        The three live shows will be presented by British singer Alesha Dixon,
+        British actress Hannah Waddingham and <br />
+        Ukrainian singer Julia Sanina, with Irish television presenter Graham
+        Norton joining for the final.<br />
+        Thirty-seven countries will participate in the contest, with Bulgaria,
+        Montenegro and North Macedonia <br />
+        ceasing their participation, mainly due to the economic impact of the
+        2021–2023 global energy crisis.
+      </p> -->
+    </div>
+
+    <script>
+      let domCountdown = document.getElementById("countdown");
+      let countdown = new Date("2023-5-9").getTime();
+      let stop = false;
+
+      function update() {
+        let now = new Date().getTime();
+
+        let difference = countdown - now;
+        if (difference <= 0) {
+          stop = true;
+        }
+
+        let seconds = difference / 1000;
+
+        let days = Math.floor(seconds / (60 * 60 * 24));
+        seconds = seconds % (60 * 60 * 24);
+        let hours = Math.floor(seconds / (60 * 60));
+        seconds = seconds % (60 * 60);
+        let minutes = Math.floor(seconds / 60);
+        seconds = seconds % 60;
+        seconds = Math.floor(seconds % 60);
+        domCountdown.innerHTML = [days, hours, minutes, seconds].join(":");
+      }
+      setInterval(function () {
+        if (!stop) {
+          update();
+        }
+        update();
+      }, 1000);
+
+      update();
+    </script>
+  </body>
+</html>
