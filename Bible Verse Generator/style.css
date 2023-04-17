@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #c9e3ac;
+}
+
+header {
+  background-color: #c9e3ac;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header h1 {
+  padding: 1rem;
+  background-color: #90be6d;
+  display: flex;
+  justify-content: center;
+  color: #eaefbd;
+}
+
+header nav a {
+  margin: 1rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: #37371f;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin: 0 auto;
+  width: 100%;
+  background-image: url(./assets/cross-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 2px 5px #37371f;
+  font-size: 3rem;
+}
+
+.title h2 {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  color: #eaefbd;
+}
+
+.generator {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.generator h4 {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  margin-right: 2rem;
+}
+
+.generator #verse-btn {
+  padding: 1rem 3rem;
+  font-weight: bold;
+  font-size: large;
+  background-color: #90be6d;
+  color: #37371f;
+  border: solid 2px #eaefbd;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #37371f;
+}
+
+.generator #verse-btn:hover {
+  background-color: #37371f;
+  border: solid 2px #eaefbd;
+  box-shadow: 2px 2px 5px #eaefbd;
+  color: #eaefbd;
+}
+
+.verse-body {
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.verse-body .image {
+  width: 50%;
+}
+
+.verse-body .image img {
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #37371f;
+  width: 100%;
+}
+
+.verse-body #output {
+  width: 50%;
+  padding: 5rem 3rem;
+  margin: 0rem 2rem;
+  font-weight: bold;
+  opacity: 0.8;
+  background-color: #eaefbd;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #37371f;
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  color: #37371f;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+  body,
+  html {
+    margin: 0 auto;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  header {
+    margin: 0;
+  }
+
+  main,
+  header,
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .generator {
+    margin: 1rem;
+  }
+
+  .generator #verse-btn {
+    font-size: 0.8rem;
+    padding: 1rem 2rem;
+  }
+
+  .verse-body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .verse-body .image {
+    width: 100%;
+    margin: 1rem 0;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .verse-body .image img {
+    width: 80%;
+  }
+
+  .verse-body #output {
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    margin: 1rem;
+    padding: 3rem 2rem;
+  }
+}
