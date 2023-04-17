@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #c9e3ac;
+}
+
+header {
+  background-color: #c9e3ac;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header h1 {
+  padding: 1rem;
+  background-color: #90be6d;
+  display: flex;
+  justify-content: center;
+  color: #eaefbd;
+}
+
+header nav a {
+  margin: 1rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: #37371f;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fortune-cookie {
+  margin: 4rem;
+  padding: 4rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #37371f;
+  background-color: #90be6d;
+}
+
+.fortune-cookie p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #eaefbd;
+  border-radius: 5px;
+  padding: 1rem;
+  box-shadow: 2px 2px 5px #eaefbd;
+}
+
+.title {
+  margin: 0 auto;
+  width: 100%;
+  background-image: url(./assets/fortune-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 2px 5px #37371f;
+}
+
+.title h2 {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  color: #37371f;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input input {
+  margin: 2rem;
+  padding: 1rem;
+  width: 100%;
+  border: solid 2px #eaefbd;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #37371f;
+  font-weight: bold;
+  font-size: medium;
+  background: none;
+}
+
+input:hover {
+  border: solid 2px #37371f;
+  box-shadow: 2px 2px 5px #c9e3ac;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.answers .greeting {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 2px 2px 5px #37371f;
+  margin: 1rem;
+  padding: 0.1rem 1rem;
+  border-radius: 5px;
+}
+
+.answers .user-question {
+  box-shadow: 2px 2px 5px #37371f;
+  margin: 1rem;
+  padding: 0.1rem 1rem;
+  border-radius: 5px;
+}
+
+#ans-question {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.button #submit-btn {
+  padding: 1rem 3rem;
+  font-weight: bold;
+  font-size: large;
+  background-color: #c9e3ac;
+  color: #37371f;
+  border: solid 2px #eaefbd;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #37371f;
+}
+
+#submit-btn:hover {
+  background-color: #37371f;
+  color: #eaefbd;
+  border: solid 2px #eaefbd;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #c9e3ac;
+}
+
+#reload-btn {
+  padding: 1rem;
+
+  font-weight: bold;
+  background: none;
+  color: #37371f;
+  border: solid 2px #eaefbd;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #37371f;
+  margin-left: 2rem;
+}
+
+#reload-btn:hover {
+  background-color: #37371f;
+  color: #eaefbd;
+  border: solid 2px #eaefbd;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #c9e3ac;
+}
+
+#fortune {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 0.1rem 1rem;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  font-size: large;
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  color: #37371f;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+  body,
+  html {
+    margin: 0 auto;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  header {
+    margin: 0;
+  }
+
+  main,
+  header,
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .fortune-cookie {
+    max-width: 100%;
+  }
+
+  .fortune-cookie .input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+  }
+
+  #submit-btn {
+    padding: 1rem 2rem;
+    font-size: medium;
+  }
+}
