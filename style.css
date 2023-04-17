@@ -32,9 +32,6 @@ header nav a {
   color: #37371f;
 }
 
-main {
-}
-
 video {
   width: 100%;
   height: auto;
@@ -74,4 +71,12 @@ footer p {
   justify-content: center;
   color: #37371f;
   padding: 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+  header nav {
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
