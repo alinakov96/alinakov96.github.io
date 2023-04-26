@@ -31,12 +31,8 @@
   </head>
 
   <body>
-    
-    <iframe
-      hidden
-      src="https://www.youtube.com/embed/f0FIdLyawrQ?autoplay=1"
-    ></iframe>
-    
+    <audio id="a" autoplay="true" src="theme.mp3" loop="true"></audio>
+
     <div class="section">
       <img src="crowd.jpg" alt="crowd in concert" />
       <h1 id="countdown">2:1:3</h1>
@@ -74,6 +70,12 @@
       }, 1000);
 
       update();
+
+      window.addEventListener("mouseover", play);
+      window.addEventListener("click", play);
+      function play() {
+        document.getElementById("a").play();
+      }
     </script>
   </body>
 </html>
