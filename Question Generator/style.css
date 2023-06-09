@@ -1,0 +1,165 @@
+/*
+Color scheme:
+dark - #605B56
+grey - #837A75
+darker green - #ACC18A
+lighter green - #DAFEB7
+light - #F2FBE0
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #acc18a;
+}
+
+header {
+  background-color: #dafeb7;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header h1 {
+  padding: 1rem;
+  background-color: #605b56;
+  display: flex;
+  justify-content: center;
+  color: #f2fbe0;
+}
+
+header nav a {
+  margin: 1rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: #605b56;
+}
+
+header nav a:hover {
+  color: #333138;
+}
+
+/* Dropdown Button */
+.dropdown .dropbtn {
+  color: #605b56;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  font-weight: 700;
+  background-color: #dafeb7;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f2fbe0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #605b56;
+  padding: 0.5rem;
+  text-decoration: none;
+  display: block;
+  border-radius: 1rem;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #dafeb7;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #fffffa;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.2rem solid #605b56;
+  border-radius: 0.4rem;
+}
+
+main h2,
+#question,
+#generate-btn {
+  margin: 1rem;
+}
+
+main h2 {
+  color: #f2fbe0;
+}
+
+#question {
+  color: #605b56;
+  font-weight: 600;
+}
+
+#generate-btn {
+  background-color: #f2fbe0;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  box-shadow: 0.2rem 0.2rem 0.4rem #605b56;
+}
+
+#generate-btn:hover {
+  border: 0.15rem solid #605b56;
+  padding: 0.4rem 0.8rem;
+  background-color: #dafeb7;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  color: #605b56;
+}
+
+@media only screen and (max-width: 300px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  header h1 {
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  main {
+    text-align: center;
+  }
+}
